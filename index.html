@@ -19,11 +19,12 @@
     ul {
       padding-left: 20px;
     }
-    img {
-      width: 100%;
-      max-width: 600px;
-      margin: 10px 0;
-    }
+ img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+}
   </style>
 </head>
 <body>
@@ -83,16 +84,13 @@
 
   <h3>Propriedades CSS utilizadas:</h3>
   <ul>
-    <li><code>display: flex</code> – Ativa o Flexbox no container</li>
-    <li><code>justify-content</code> – Alinha os itens no eixo principal</li>
-    <li><code>align-items</code> – Alinha os itens no eixo cruzado</li>
-    <li><code>flex-direction</code> – Define a direção dos itens (linha ou coluna)</li>
-    <li><code>flex-wrap</code> – Permite que os itens quebrem linha</li>
-    <li><code>align-self</code> – Alinhamento individual de um item</li>
+    <li>display: flex – Ativa o Flexbox no container</li>
+    <li>justify-content– Alinha os itens no eixo principal</li>
+    <li>align-items– Alinha os itens no eixo cruzado</li>
+    <li>flex-direction – Define a direção dos itens seja linha ou coluna</li>
   </ul>
 
   <h3>Aplicação Prática:</h3>
   <p>A distribuição dos cards pode ser controlada com justify-content: space-between para espaçamento uniforme e align-items: stretch para garantir que todos os cards tenham altura igual, mesmo que o conteúdo interno varie. Caso seja necessário destacar um card específico (como o projeto mais recente), pode-se usar order: -1 para posicioná-lo à frente visualmente, sem alterar sua posição no código-fonte — o que também é benéfico para acessibilidade.</p>
-
 </body>
 </html>
