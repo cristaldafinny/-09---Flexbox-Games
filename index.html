@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relatório Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #db8dbb;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Relatório: Prática com Flexbox</h1>
+
+  <h2>Cristal Dáfinny</h2>
+  <h2>Jogos Escolhidos</h2>
+  <ul>
+    <li>
+      <strong>Flexbox Froggy</strong>  
+        <img src="imgs/capa froggy.png" alt="Imagem do jogo volta já..." />
+      <br />
+      Link: <a href="https://flexboxfroggy.com/">Jogue Também (se quiser)</a>  
+      <br />
+      Justificativa: Escolhi este jogo por sua abordagem divertida e progressiva de ensinar Flexbox com desafios visuais claros e bem explicados.
+    </li>
+    <li>
+      <strong>Play Flex Box Adventure – CSS Game to Learn Flexbox</strong>  
+        <img src="imgs/capaoutro.png" alt="Imagem do jogo volta já..." />
+      <br />
+      Link: <a href="https://codingfantasy.com/games/flexboxadventure/play" target="_blank">Jogue! (com conscentimento)</a>  
+      <br />
+      Justificativa: A estética e a história envolvente tornam o aprendizado mais divertido, além de apresentar situações realistas.
+    </li>
+  </ul>
+
+  <h2>Níveis</h2>
+
+  <h3>Flexbox Froggy</h3>
+  <p><strong>Nível 12:</strong> Desafio com `justify-content: space-around`.</p>
+  <img src="prints/froggy-nivel12.png" alt="Flexbox Froggy - Nível 12" />
+  <p>Foi desafiador porque os espaços ao redor do conteúdo confundem quando se está começando. Exige atenção ao espaçamento entre os elementos e bordas.</p>
+
+  <p><strong>Nível 18:</strong> Desafio com `align-items: flex-end` e `justify-content: center`.</p>
+  <img src="prints/froggy-nivel18.png" alt="Flexbox Froggy - Nível 18" />
+  <p>Manipular os eixos simultaneamente exige entender bem o comportamento do eixo principal vs. eixo cruzado.</p>
+
+  <p><strong>Nível 24:</strong> Uso de várias propriedades simultaneamente.</p>
+  <img src="prints/froggy-nivel24.png" alt="Flexbox Froggy - Nível 24" />
+  <p>Foi o mais desafiador pois exigia o uso de `flex-direction`, `align-items`, `justify-content` juntos para acertar a posição dos sapos.</p>
+
+  <h3>Flexbox Adventure</h3>
+  <p><strong>Fase 5:</strong> Uso de `flex-wrap: wrap` com múltiplos elementos.</p>
+  <img src="prints/adventure-fase5.png" alt="Flexbox Adventure - Fase 5" />
+  <p>Difícil por envolver quebra de linha e distribuição de espaço ao mesmo tempo.</p>
+
+  <p><strong>Fase 7:</strong> Combinação de `justify-content: space-between` com `align-items: center`.</p>
+  <img src="prints/adventure-fase7.png" alt="Flexbox Adventure - Fase 7" />
+  <p>Desafiador pois o alinhamento dos cavaleiros nas duas direções exige bastante atenção visual.</p>
+
+  <p><strong>Fase 10:</strong> Aplicação de `flex-direction: column`.</p>
+  <img src="prints/adventure-fase10.png" alt="Flexbox Adventure - Fase 10" />
+  <p>Foi um ponto de virada, pois a direção muda e afeta completamente o raciocínio espacial anterior.</p>
+
+  <h2>Aplicação</h2>
+
+  <h3>Propriedades CSS utilizadas:</h3>
+  <ul>
+    <li><code>display: flex</code> – Ativa o Flexbox no container</li>
+    <li><code>justify-content</code> – Alinha os itens no eixo principal</li>
+    <li><code>align-items</code> – Alinha os itens no eixo cruzado</li>
+    <li><code>flex-direction</code> – Define a direção dos itens (linha ou coluna)</li>
+    <li><code>flex-wrap</code> – Permite que os itens quebrem linha</li>
+    <li><code>align-self</code> – Alinhamento individual de um item</li>
+  </ul>
+
+  <h3>Aplicação Prática:</h3>
+  <p>Imagine um site com um <strong>menu de navegação responsivo</strong>. Com Flexbox, posso alinhar os itens na horizontal no desktop com `justify-content: space-between` e no mobile mudar com `flex-direction: column`, empilhando os links de forma responsiva e legível.</p>
+
+</body>
+</html>
